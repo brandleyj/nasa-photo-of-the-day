@@ -12,7 +12,7 @@ function DailyInfo() {
 				`https://api.nasa.gov/planetary/apod?api_key=E37T91MLqCIjI1m4IAFOo1YgIQdLKHuXosGsKcr4`
 			)
 			.then(response => {
-				console.log(response.data);
+				console.log(response);
 				setCopyright(response.data.copyright);
 				setExplanation(response.data.explanation);
 			})

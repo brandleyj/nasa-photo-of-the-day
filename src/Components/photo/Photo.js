@@ -13,7 +13,7 @@ function DailyPic() {
 				`https://api.nasa.gov/planetary/apod?api_key=E37T91MLqCIjI1m4IAFOo1YgIQdLKHuXosGsKcr4`
 			)
 			.then(response => {
-				console.log(response.data);
+				console.log(response);
 				setTitle(response.data.title);
 				setDate(response.data.date);
 				setPic(response.data.hdurl);
