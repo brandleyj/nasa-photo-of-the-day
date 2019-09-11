@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
+import DailyPic from "./Components/photo/Photo";
+import DailyInfo from "./Components/info/Info";
 
 function App() {
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-  );
+	return (
+		<div className="App">
+			<DailyPic />
+			<DailyInfo />
+		</div>
+	);
 }
 
 export default App;
