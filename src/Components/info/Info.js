@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import InfoCard from "./InfoCard";
+import styled from "styled-components";
 
 function DailyInfo() {
 	const [copyright, setCopyright] = useState("");

@@ -1,11 +1,24 @@
 import React from "react";
+import styled from "styled-components";
+
+const Card = styled.div`
+	background: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
+const Info = styled.p`
+	color: yellow;
+	max-width: 60%;
+`;
 
 const InfoCard = props => {
 	return (
-		<div className="infoCard">
-			<p>Image Credits: {props.getCopyright}</p>
-			<p>{props.getExplanation}</p>
-		</div>
+		<Card>
+			<Info>Image Credits: {props.getCopyright}</Info>
+			<Info>{props.getExplanation}</Info>
+		</Card>
 	);
 };
 export default InfoCard;
