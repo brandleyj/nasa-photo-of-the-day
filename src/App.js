@@ -3,13 +3,19 @@ import "./App.css";
 import DailyPic from "./Components/photo/Photo";
 import DailyInfo from "./Components/info/Info";
 import styled from "styled-components";
+import img from "./img/Stars.jpg";
+
+const Card = styled.div`
+	background: url(${img}) center center fixed;
+	background-size: cover;
+`;
 
 function App() {
 	return (
-		<div className="App">
+		<Card>
 			<DailyPic />
 			<DailyInfo />
-		</div>
+		</Card>
 	);
 }
 

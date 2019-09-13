@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PhotoCard from "./PhotoCard";
-import styled from "styled-components";
 
 function DailyPic() {
 	const [title, setTitle] = useState("");
